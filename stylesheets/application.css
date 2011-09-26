@@ -40,15 +40,45 @@ p { padding: 0 0 1em 0; margin: 0; }
 
 #status a { color: #c00; }
 
-#nav { background-color: #444; position: absolute; bottom: 0; width: 100%; height: 32px; margin: 0 auto; }
+#nav {
+  background-color: #444;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 32px;
+  margin: 0 auto;
+  border-top-right-radius:4px;
+  border-top-left-radius:4px;
+  -moz-border-radius-topright:4px;
+  -moz-border-radius-topleft:4px;
+  -webkit-border-top-left-radius:4px;
+  -webkit-border-top-right-radius:4px;
+}
 
 #leftnav, #rightnav { position: absolute; margin: 0; padding: 0; }
 #leftnav { left: 0; }
 #rightnav { right: 0; }
 #leftnav li, #rightnav li { display: inline; float: left; }
-#leftnav li a, #rightnav li a { color: #eee; line-height: 32px; padding: 0 9px; display: block; text-decoration: none; }
-#leftnav li a:hover, #rightnav li a:hover { background-color: #bbb; color: #444; }
-#leftnav li a.active, #rightnav li a.active { background-color: #fff; color: #444; cursor: default; }
+#leftnav li a, #rightnav li a {
+  color: #eee;
+  line-height: 32px;
+  padding: 0 9px;
+  display: block;
+  text-decoration: none;
+}
+#leftnav li a:hover, #rightnav li a:hover { text-decoration: underline; }
+#leftnav li.active a, #rightnav li.active a {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+  border-top-right-radius:4px;
+  border-top-left-radius:4px;
+  -moz-border-radius-topright:4px;
+  -moz-border-radius-topleft:4px;
+  -webkit-border-top-left-radius:4px;
+  -webkit-border-top-right-radius:4px;
+}
+#leftnav li.active a:hover, #rightnav li.active a:hover { text-decoration: none; }
 
 #main-wrapper { background-color: transparent; margin: 0 auto; min-width: 970px; padding: 0 35px; }
 
